@@ -194,8 +194,8 @@ namespace DTPZaikovAPP.ViewModel
             string message = "Члени, у яких більше одного участія у ДТП:\n";
             foreach (var member in multipleDTPMembers)
             {
-                string driverIds = string.Join(", ", member.DriversId.Select(d => d.Id));
-                message += $"Водії ID: {driverIds}, ДТП ID: {member.DTPId.Id}\n";
+                string driverName = string.Join(", ", member.DriversId.Select(d => d.FullName));
+                message += $"Ім'я водія: {driverName}, Номер акту ДТП: {member.DTPId.ActNumber}\n";
             }
 
             MessageBox.Show(message);
