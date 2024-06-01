@@ -1,0 +1,32 @@
+[
+  {
+    "Id": 1,
+    "FullName": "Driver1",
+    "Exp": 3,
+    "Certificate": "ABCD1234"
+  },
+  {
+    "Id": 2,
+    "FullName": "Driver2",
+    "Exp": 5,
+    "Certificate": "EFGH5678"
+  },
+  {
+    "Id": 3,
+    "FullName": "Driver3",
+    "Exp": 7,
+    "Certificate": "IJKL9012"
+  },
+  {
+    "Id": 4,
+    "FullName": "Driver4",
+    "Exp": 2,
+    "Certificate": "MNOP3456"
+  },
+  {
+    "Id": 5,
+    "FullName": "Driver5",
+    "Exp": 4,
+    "Certificate": "QRST7890"
+  }
+]

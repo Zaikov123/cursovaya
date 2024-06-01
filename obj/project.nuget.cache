@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8BAb0GAbFnM4egYihQXmPL0n+uQqWOcI9RuktoOdPIUFXMrQdlQvr1t0orADbW4AAzbcztK4IwhD0K6mjNEgjw==",
+  "success": true,
+  "projectFilePath": "D:\\sisya\\DTPZaikovAPP\\DTPZaikovAPP.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\VIVO\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

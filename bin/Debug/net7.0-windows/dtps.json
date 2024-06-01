@@ -1,0 +1,56 @@
+[
+  {
+    "DateDTP": "2024-02-08T12:30:00",
+    "Id": 1,
+    "Place": "Intersection1",
+    "СasualtyRate": 2,
+    "ActNumber": 123456789012,
+    "DTPCause": "Collision",
+    "TypeOfDTP": "Car accident "
+  },
+  {
+    "DateDTP": "2024-02-08T15:45:00",
+    "Id": 2,
+    "Place": "Highway Exit2",
+    "СasualtyRate": 1,
+    "ActNumber": 234567890123,
+    "DTPCause": "Rear-end collision",
+    "TypeOfDTP": "A hit-and-run with a car"
+  },
+  {
+    "DateDTP": "2024-02-09T09:15:00",
+    "Id": 3,
+    "Place": "City Center3",
+    "СasualtyRate": 3,
+    "ActNumber": 345678901234,
+    "DTPCause": "Pedestrian hit",
+    "TypeOfDTP": "A hit-and-run with a car"
+  },
+  {
+    "DateDTP": "2024-02-10T14:00:00",
+    "Id": 4,
+    "Place": "Parking Lot4",
+    "СasualtyRate": 0,
+    "ActNumber": 456789012345,
+    "DTPCause": "No injuries, property damage only",
+    "TypeOfDTP": "Car accident "
+  },
+  {
+    "DateDTP": "2024-02-11T18:20:00",
+    "Id": 5,
+    "Place": "Residential Area5",
+    "СasualtyRate": 1,
+    "ActNumber": 567890123456,
+    "DTPCause": "Side impact",
+    "TypeOfDTP": "Car accident "
+  },
+  {
+    "DateDTP": "2000-01-01T00:00:00",
+    "Id": 0,
+    "Place": "Home",
+    "СasualtyRate": 25,
+    "ActNumber": 313131,
+    "DTPCause": "Collision",
+    "TypeOfDTP": "Car accident "
+  }
+]

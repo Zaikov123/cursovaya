@@ -1,0 +1,136 @@
+﻿<Window x:Name="DTPApp" x:Class="DTPZaikovAPP.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="DTP App" Height="450" Width="800">
+    <Grid>
+        <ScrollViewer>
+        <TabControl>
+            
+            <!-- Сведення про інциденти -->
+                <TabItem Header="Інциденти">
+                    <!-- Сведення про водіїв -->
+                    <ListView ItemsSource="{Binding Accidents}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Номер акту дтп" DisplayMemberBinding="{Binding DTPId.ActNumber}" />
+                                <GridViewColumn Header="Номер ліцензії авто" DisplayMemberBinding="{Binding CarId.LicensePlates}" />
+                                <GridViewColumn Header="Водії">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <ItemsControl ItemsSource="{Binding DriversId}">
+                                                <ItemsControl.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock Text="{Binding FullName}" />
+                                                    </DataTemplate>
+                                                </ItemsControl.ItemTemplate>
+                                            </ItemsControl>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+
+                            </GridView>
+
+                        </ListView.View>
+                    </ListView>
+
+                </TabItem>
+                <TabItem Header="Водії">
+                    <!-- Сведення про водіїв -->
+                    <ListView ItemsSource="{Binding Drivers}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Ім'я" DisplayMemberBinding="{Binding FullName}" />
+                                <GridViewColumn Header="Стаж" DisplayMemberBinding="{Binding  Exp}" />
+                                <GridViewColumn Header="Номер посвідчення водія" DisplayMemberBinding="{Binding Certificate}" />
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+
+            </TabItem>
+            <TabItem Header="Автомобілі">
+                    <!-- Сведення про автомобілі -->
+                    <ListView ItemsSource="{Binding Cars}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Назва" DisplayMemberBinding="{Binding Name}" />
+                                <GridViewColumn Header="Фірма" DisplayMemberBinding="{Binding Firm}" />
+                                <GridViewColumn Header="Марка" DisplayMemberBinding="{Binding Brand}" />
+                                <GridViewColumn Header="Тип кузова" DisplayMemberBinding="{Binding BodyType}" />
+                                <GridViewColumn Header="Гос. номер" DisplayMemberBinding="{Binding LicensePlates}" />
+                                <GridViewColumn Header="Власник" DisplayMemberBinding="{Binding Owner}" />
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+            </TabItem>
+            <TabItem Header="ДТП">
+                <!-- Сведення про ДТП -->
+                    <ListView ItemsSource="{Binding DTPs}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Дата ДТП" DisplayMemberBinding="{Binding DateDTP}" />
+                                <GridViewColumn Header="Місце" DisplayMemberBinding="{Binding Place}" />
+                                <GridViewColumn Header="Постраждалі" DisplayMemberBinding="{Binding СasualtyRate}" />
+                                <GridViewColumn Header="Номер акту" DisplayMemberBinding="{Binding ActNumber}" />
+                                <GridViewColumn Header="Причина ДТП" DisplayMemberBinding="{Binding DTPCause}" />
+                                <GridViewColumn Header="Тип ДТП" DisplayMemberBinding="{Binding TypeOfDTP}" />
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+            </TabItem>
+
+                <TabItem Header="Додавання або видалення ДТП">
+                <StackPanel>
+                    <Label Content="Дата ДТП:" />
+                    <DatePicker SelectedDate="{Binding DtpDate}"/>
+
+                    <Label Content="Місце:" />
+                    <TextBox Text="{Binding DtpPlace}"/>
+
+                    <Label Content="Кількість постраждалих:" />
+                    <TextBox Text="{Binding DtpCount}"/>
+
+                    <Label Content="Номер акту:" />
+                    <TextBox Text="{Binding ActNumber}" />
+
+                    <Label Content="Причина ДТП:" />
+                    <TextBox Text="{Binding DtpReason}"/> 
+                    
+                    <Label Content="Тип ДТП:" />
+                    <TextBox Text="{Binding DtpType}"/>
+                    
+                    <Button Content="Додати ДТП" Command="{Binding AddCommand}" />
+                        <ComboBox ItemsSource="{Binding DTPs}" DisplayMemberPath="ActNumber" SelectedItem="{Binding DtpToDelete}"/>
+                    <Button Content="Видалити ДТП" Command="{Binding DeleteCommand}" />
+                </StackPanel>
+            </TabItem>
+                <TabItem Header="Запити">
+                    <StackPanel>
+                        <Button Content="Список водіїв, які вчинили більше однієї ДТП"
+                                Command="{Binding ShowListMoreThanOneDTPMembersCommand}"/>
+
+
+                        <Button Content="Список водіїв, які брали участь у ДТП у заданому місці"
+                                Command="{Binding ShowListAccidentsInPlaceCommand}" Margin="5"/>
+                        <ComboBox ItemsSource="{Binding DTPs}" DisplayMemberPath="Place" 
+                                  SelectedItem="{Binding SelectedPlaceForShowListAccidentsInPlace}" />
+
+
+                        <Button Content="Список водіїв, які беруть участь у ДТП на дану дату"
+                                Command="{Binding ShowListAccidentsByDateCommand}" Margin="5"/>
+                        <DatePicker SelectedDate="{Binding SelectedDateForShowListAccidentByDate}"/>
+
+                        <Button Content="ДТП із максимальною кількістю потерпілих"
+                                Command="{Binding AccidentWithMaxСasualtyRateCommand}" Margin="5"/>
+                        
+                        <Button Content="Список водіїв, які беруть участь у ДТП із наїздом на пішоходів"
+                                Command="{Binding AccidentCauseByHitAndRunCarCommand}" Margin="5"/>
+                    </StackPanel>
+                </TabItem>
+            </TabControl>
+        </ScrollViewer>
+    </Grid>
+</Window>

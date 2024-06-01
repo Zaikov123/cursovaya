@@ -1,0 +1,194 @@
+[
+  {
+    "DTPId": {
+      "DateDTP": "2024-02-08T12:30:00",
+      "Id": 1,
+      "Place": "Intersection1",
+      "СasualtyRate": 2,
+      "ActNumber": 123456789012,
+      "DTPCause": "Collision",
+      "TypeOfDTP": "Car accident "
+    },
+    "DriversId": [
+      {
+        "Id": 1,
+        "FullName": "Driver1",
+        "Exp": 3,
+        "Certificate": "ABCD1234"
+      },
+      {
+        "Id": 2,
+        "FullName": "Driver2",
+        "Exp": 5,
+        "Certificate": "EFGH5678"
+      }
+    ],
+    "CarId": {
+      "Id": 1,
+      "Name": "Car1",
+      "Firm": "Firm1",
+      "Brand": "Brand1",
+      "BodyType": "Type1",
+      "LicensePlates": "ABC123",
+      "Owner": "Owner1"
+    }
+  },
+  {
+    "DTPId": {
+      "DateDTP": "2024-02-08T15:45:00",
+      "Id": 2,
+      "Place": "Highway Exit2",
+      "СasualtyRate": 1,
+      "ActNumber": 234567890123,
+      "DTPCause": "Rear-end collision",
+      "TypeOfDTP": "A hit-and-run with a car"
+    },
+    "DriversId": [
+      {
+        "Id": 2,
+        "FullName": "Driver2",
+        "Exp": 5,
+        "Certificate": "EFGH5678"
+      },
+      {
+        "Id": 3,
+        "FullName": "Driver3",
+        "Exp": 7,
+        "Certificate": "IJKL9012"
+      }
+    ],
+    "CarId": {
+      "Id": 2,
+      "Name": "Car2",
+      "Firm": "Firm2",
+      "Brand": "Brand2",
+      "BodyType": "Type2",
+      "LicensePlates": "XYZ789",
+      "Owner": "Owner2"
+    }
+  },
+  {
+    "DTPId": {
+      "DateDTP": "2024-02-09T09:15:00",
+      "Id": 3,
+      "Place": "City Center3",
+      "СasualtyRate": 3,
+      "ActNumber": 345678901234,
+      "DTPCause": "Pedestrian hit",
+      "TypeOfDTP": "A hit-and-run with a car"
+    },
+    "DriversId": [
+      {
+        "Id": 3,
+        "FullName": "Driver3",
+        "Exp": 7,
+        "Certificate": "IJKL9012"
+      },
+      {
+        "Id": 4,
+        "FullName": "Driver4",
+        "Exp": 2,
+        "Certificate": "MNOP3456"
+      }
+    ],
+    "CarId": {
+      "Id": 3,
+      "Name": "Car3",
+      "Firm": "Firm3",
+      "Brand": "Brand3",
+      "BodyType": "Type3",
+      "LicensePlates": "123XYZ",
+      "Owner": "Owner3"
+    }
+  },
+  {
+    "DTPId": {
+      "DateDTP": "2024-02-10T14:00:00",
+      "Id": 4,
+      "Place": "Parking Lot4",
+      "СasualtyRate": 0,
+      "ActNumber": 456789012345,
+      "DTPCause": "No injuries, property damage only",
+      "TypeOfDTP": "Car accident "
+    },
+    "DriversId": [
+      {
+        "Id": 4,
+        "FullName": "Driver4",
+        "Exp": 2,
+        "Certificate": "MNOP3456"
+      },
+      {
+        "Id": 5,
+        "FullName": "Driver5",
+        "Exp": 4,
+        "Certificate": "QRST7890"
+      }
+    ],
+    "CarId": {
+      "Id": 4,
+      "Name": "Car4",
+      "Firm": "Firm4",
+      "Brand": "Brand4",
+      "BodyType": "Type4",
+      "LicensePlates": "456ABC",
+      "Owner": "Owner4"
+    }
+  },
+  {
+    "DTPId": {
+      "DateDTP": "2024-02-11T18:20:00",
+      "Id": 5,
+      "Place": "Residential Area5",
+      "СasualtyRate": 1,
+      "ActNumber": 567890123456,
+      "DTPCause": "Side impact",
+      "TypeOfDTP": "Car accident "
+    },
+    "DriversId": [
+      {
+        "Id": 5,
+        "FullName": "Driver5",
+        "Exp": 4,
+        "Certificate": "QRST7890"
+      }
+    ],
+    "CarId": {
+      "Id": 5,
+      "Name": "Car5",
+      "Firm": "Firm5",
+      "Brand": "Brand5",
+      "BodyType": "Type5",
+      "LicensePlates": "789DEF",
+      "Owner": "Owner5"
+    }
+  },
+  {
+    "DTPId": {
+      "DateDTP": "2024-02-08T12:30:00",
+      "Id": 2,
+      "Place": "Intersection1",
+      "СasualtyRate": 2,
+      "ActNumber": 32112321322,
+      "DTPCause": "Me",
+      "TypeOfDTP": "Car accident "
+    },
+    "DriversId": [
+      {
+        "Id": 1,
+        "FullName": "Driver1",
+        "Exp": 3,
+        "Certificate": "ABCD1234"
+      }
+    ],
+    "CarId": {
+      "Id": 1,
+      "Name": "Car1",
+      "Firm": "Firm1",
+      "Brand": "Brand1",
+      "BodyType": "Type1",
+      "LicensePlates": "ABC123",
+      "Owner": "Owner1"
+    }
+  }
+]

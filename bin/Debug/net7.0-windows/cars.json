@@ -1,0 +1,47 @@
+[
+  {
+    "Id": 1,
+    "Name": "Car1",
+    "Firm": "Firm1",
+    "Brand": "Brand1",
+    "BodyType": "Type1",
+    "LicensePlates": "ABC123",
+    "Owner": "Owner1"
+  },
+  {
+    "Id": 2,
+    "Name": "Car2",
+    "Firm": "Firm2",
+    "Brand": "Brand2",
+    "BodyType": "Type2",
+    "LicensePlates": "XYZ789",
+    "Owner": "Owner2"
+  },
+  {
+    "Id": 3,
+    "Name": "Car3",
+    "Firm": "Firm3",
+    "Brand": "Brand3",
+    "BodyType": "Type3",
+    "LicensePlates": "123XYZ",
+    "Owner": "Owner3"
+  },
+  {
+    "Id": 4,
+    "Name": "Car4",
+    "Firm": "Firm4",
+    "Brand": "Brand4",
+    "BodyType": "Type4",
+    "LicensePlates": "456ABC",
+    "Owner": "Owner4"
+  },
+  {
+    "Id": 5,
+    "Name": "Car5",
+    "Firm": "Firm5",
+    "Brand": "Brand5",
+    "BodyType": "Type5",
+    "LicensePlates": "789DEF",
+    "Owner": "Owner5"
+  }
+]
